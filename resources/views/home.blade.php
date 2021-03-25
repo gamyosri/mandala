@@ -1,182 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Coming Soon</title>
-    <meta charset="UTF-8">
+    <title>Mandala</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/app.js') }}"></script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        span {
+        #menu-toggle:checked + #menu {
             display: block;
-            height: 20em;
-            left: calc(50% - 10em);
-            position: absolute;
-            top: calc(50% - 10em);
-            width: 20em;
-        }
-
-        .large-circles {
-            animation: spin 10s linear infinite;
-        }
-
-        .small-shapes {
-            animation: spin 30s linear infinite;
-        }
-
-        .content-squircle {
-            animation: spin 30s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotateZ(0);
-            }
-            100% {
-                transform: rotateZ(360deg);
-            }
-        }
-
-        .circle,
-        .squircle {
-            border-top: 0.1em solid rgba(255, 255, 255, 0.4);
-            height: 12.5em;
-            position: absolute;
-            width: 12.5em;
-        }
-
-        .circle {
-            border-radius: 50%;
-            box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
-            left: calc(50% - 6.25em);
-            top: calc(50% - 12.5em);
-            transform-origin: 50% 12.5em;
-        }
-
-        .one {
-            background: rgba(16, 63, 236, 0.75);
-            transform: rotateZ(225deg);
-        }
-
-        .two {
-            background: rgba(37, 172, 162, 0.75);
-            transform: rotateZ(180deg);
-        }
-
-        .three {
-            background: rgba(233, 124, 32, 0.75);
-            transform: rotateZ(135deg);
-        }
-
-        .four {
-            background: rgba(235, 67, 35, 0.75);
-            transform: rotateZ(90deg);
-        }
-
-        .five {
-            background: rgba(190, 28, 65, 0.75);
-            transform: rotateZ(45deg);
-        }
-
-        .six {
-            background: rgba(208, 57, 159, 0.75);
-            transform: rotateZ(0);
-        }
-
-        .seven {
-            background: rgba(150, 32, 198, 0.75);
-            transform: rotateZ(-45deg);
-        }
-
-        .eight {
-            background: rgba(95, 33, 203, 0.75);
-            transform: rotateZ(-90deg);
-        }
-
-        .small {
-            width: 4em;
-            height: 4em;
-            left: calc(50% - 2em);
-            top: calc(50% - 15em);
-            transform-origin: 50% 15em;
-            box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
-        }
-
-        .small.squircle {
-            background: none;
-            border: none;
-            box-shadow: none;
-        }
-
-        .small.squircle::after {
-            background: red;
-            border-radius: 25%;
-            box-shadow: -0.25em 0.25em 0.5em rgba(0, 0, 0, 0.2);
-            content: "";
-            height: 100%;
-            position: absolute;
-            transform: rotateZ(-45deg);
-            width: 100%;
-        }
-
-        .small.squircle.two::after {
-            background: rgba(37, 172, 162, 0.75);
-        }
-
-        .small.squircle.four::after {
-            background: rgba(235, 67, 35, 0.75);
-        }
-
-        .small.squircle.six::after {
-            background: rgba(208, 57, 159, 0.75);
-        }
-
-        .small.squircle.eight::after {
-            background: rgba(95, 33, 203, 0.75);
-        }
-
-        .large.squircle {
-            background: rgba(30, 7, 66, 0.15);
-            border: none;
-            height: 15em;
-            width: 15em;
-            left: calc(50% - 7.5em);
-            position: absolute;
-            top: calc(50% - 7.5em);
-            transform: none;
-            border-radius: 2em;
-            border-bottom: 2em;
         }
     </style>
 </head>
 
 <body>
-<span class="large-circles">
-  <div class="large circle one"></div>
-  <div class="large circle two"></div>
-  <div class="large circle three"></div>
-  <div class="large circle four"></div>
-  <div class="large circle five"></div>
-  <div class="large circle six"></div>
-  <div class="large circle seven"></div>
-  <div class="large circle eight"></div>
-</span>
+<header class="lg:px-38 px-16 bg-pink-200 flex flex-wrap items-center lg:py-10 py-5">
+    <div class="flex-1 flex justify-between items-center">
+        <a href="#">
+            Mandala
+        </a>
+    </div>
 
-<span class="small-shapes">
-  <div class="small circle one"></div>
-  <div class="small squircle two"></div>
-  <div class="small circle three"></div>
-  <div class="small squircle four"></div>
-  <div class="small circle five"></div>
-  <div class="small squircle six"></div>
-  <div class="small circle seven"></div>
-  <div class="small squircle eight"></div>
-</span>
+    <label for="menu-toggle" class="pointer-cursor lg:hidden block">
+        <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+             viewBox="0 0 20 20"><title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+    </label>
+    <input class="hidden" type="checkbox" id="menu-toggle"/>
 
-<span class="content-squircle">
-  <div class="large squircle one"></div>
-</span>
-
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav>
+            <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Home</a>
+                </li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Categories</a>
+                </li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">About</a>
+                </li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2"
+                       href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 </body>
 </html>
