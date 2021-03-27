@@ -77,33 +77,125 @@
 </div>
 
 <main class="bg-blue-200 flex flex-col justify-between content-center">
-    <div id="best-products " class="flex flex-col content-center mt-6">
-        <h1 class="border-b-2 mx-auto">new products</h1>
-        <div class="flex flex-col flex-wrap justify-center md:flex-row">
-            <img class="mx-4 my-4" src="https://via.placeholder.com/350x220">
-            <img class="mx-4 my-4" src="https://via.placeholder.com/350x220">
-            <img class="mx-4 my-4" src="https://via.placeholder.com/350x220">
+    <div id="latest-products " class="flex flex-col content-center mt-10">
+        <h1 class="border-b-2 mx-auto m">latest creations</h1>
+        <div class="flex flex-col flex-wrap justify-center md:flex-row mt-10">
+            <div class="rounded overflow-hidden shadow-lg m-4 bg-gray-100 md:w-1/4">
+                <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4  border-b-2">
+                    <div class="font-bold text-xl mb-2">title</div>
+                    <p class="text-grey-darker text-base">
+                        description
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#photography</span>
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#travel</span>
+                </div>
+            </div>
+            <div class=" rounded overflow-hidden shadow-lg m-4 bg-gray-100 md:w-1/4">
+                <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4  border-b-2">
+                    <div class="font-bold text-xl mb-2">title</div>
+                    <p class="text-grey-darker text-base">
+                        description
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#photography</span>
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#travel</span>
+                </div>
+            </div>
+            <div class=" rounded overflow-hidden shadow-lg m-4 bg-gray-100 md:w-1/4">
+                <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4  border-b-2">
+                    <div class="font-bold text-xl mb-2">title</div>
+                    <p class="text-grey-darker text-base">
+                        description
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#photography</span>
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#travel</span>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="recent-products" class="flex flex-col content-center mt-6">
+    <div id="recent-products" class="flex flex-col content-center m-10">
         <h1 class="border-b-2 mx-auto">best products</h1>
-        <div class="flex flex-col flex-wrap justify-center md:flex-row">
-            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
-            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
-            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
-            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
+        <div class="flex flex-col flex-wrap justify-center md:flex-row mt-10">
+            <div class=" rounded overflow-hidden shadow-lg m-4 bg-gray-100 md:w-1/3 lg:w-1/5">
+                <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4  border-b-2">
+                    <div class="font-bold text-xl mb-2">title</div>
+                    <p class="text-grey-darker text-base">
+                        description
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#photography</span>
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#travel</span>
+                </div>
+            </div>
+
+            <div class=" rounded overflow-hidden shadow-lg m-4 bg-gray-100 md:w-1/3 lg:w-1/5">
+                <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4  border-b-2">
+                    <div class="font-bold text-xl mb-2">title</div>
+                    <p class="text-grey-darker text-base">
+                        description
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#photography</span>
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#travel</span>
+                </div>
+            </div>
+
+            <div class=" rounded overflow-hidden shadow-lg m-4 bg-gray-100 md:w-1/3 lg:w-1/5">
+                <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4  border-b-2">
+                    <div class="font-bold text-xl mb-2">title</div>
+                    <p class="text-grey-darker text-base">
+                        description
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#photography</span>
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#travel</span>
+                </div>
+            </div>
+
+            <div class=" rounded overflow-hidden shadow-lg m-4 bg-gray-100 md:w-1/3 lg:w-1/5">
+                <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4  border-b-2">
+                    <div class="font-bold text-xl mb-2">title</div>
+                    <p class="text-grey-darker text-base">
+                        description
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#photography</span>
+                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#travel</span>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="contact" class="bg-gray-100 flex flex-col justify-center my-10 py-10">
         <h1 class="border-b-2 mx-auto my-8">stay in touch</h1>
         <form class="flex flex-wrap justify-center py-auto flex-shrink-1 ">
-            <input class=" my-4 rounded-lg border-t mx-2 border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="your@mail.com"/>
-            <button class="my-4 px-8 rounded-lg bg-pink-400  text-gray-800 font-bold p-4 uppercase border-pink-500 border-t border-b border-r">Subscribe</button>
+            <input class=" my-4 rounded-lg border-t mx-2 border-b border-l text-gray-800 border-gray-200 bg-white"
+                   placeholder="your@mail.com"/>
+            <button
+                class="my-4 px-8 rounded-lg bg-pink-400  text-gray-800 font-bold p-4 uppercase border-pink-500 border-t border-b border-r">
+                Subscribe
+            </button>
         </form>
     </div>
 
-    <footer class="lg:px-38 px-16 text-black flex flex-row flex-wrap justify-around lg:py-8 py-5 bg-pink-300 border-t-2 border-black ">
+    <footer
+        class="lg:px-38 px-16 text-black flex flex-row flex-wrap justify-around lg:py-8 py-5 bg-pink-300 border-t-2 border-black ">
         <div class="flex justify-between items-center">
             <a href="#">
                 Mandala
@@ -111,16 +203,20 @@
         </div>
 
         <div class=" flex" id="menu">
-            <nav class="items-center ">
+            <nav class="items-center">
                 <ul class="block text-black flex items-center justify-around text-base text-gray-700 pt-4 lg:pt-0">
                     <li>
-                            <a class="py-3 px-4 block border-b-2 border-transparent hover:border-indigo-400"
-                           href="#"><img class="object-scale-down h-5 md:h-10" src="https://cdn.icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png">
-                            </a>
+                        <a class="py-3 px-4 block border-b-2 border-transparent hover:border-indigo-400"
+                           href="#"><img class="object-scale-down h-5 md:h-10"
+                                         src="https://cdn.icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png"
+                                         alt="facebook">
+                        </a>
                     </li>
                     <li>
                         <a class="py-3 px-4 block border-b-2 border-transparent hover:border-indigo-400"
-                           href="#"><img class="object-scale-down h-5 md:h-10" src="https://www.pngkit.com/png/full/0-7617_instagram-color-icon-instagram-social-media-png-instagram.png">
+                           href="#"><img class="object-scale-down h-5 md:h-10"
+                                         src="https://www.pngkit.com/png/full/0-7617_instagram-color-icon-instagram-social-media-png-instagram.png"
+                                         alt="insta">
                         </a>
                     </li>
                 </ul>
