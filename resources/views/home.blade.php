@@ -15,7 +15,7 @@
 
 <body>
 <div class="bg-pink-200 ">
-    <header class="lg:px-38 px-16 text-indigo-50 flex flex-wrap items-center lg:py-10 py-5">
+    <header class="lg:px-38 px-16 text-black flex flex-wrap items-center lg:py-10 py-5">
         <div class="flex-1 flex justify-between items-center">
             <a href="#">
                 Mandala
@@ -23,7 +23,7 @@
         </div>
 
         <label for="menu-toggle" class="pointer-cursor lg:hidden block">
-            <svg class="fill-current text-indigo-50" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                  viewBox="0 0 20 20"><title>menu</title>
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
             </svg>
@@ -32,7 +32,7 @@
 
         <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
             <nav>
-                <ul class="text-indigo-50 lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+                <ul class="text-black lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
                     <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
                            href="#">Home</a>
                     </li>
@@ -59,16 +59,27 @@
         </button>
     </div>
 </div>
-<div id="categories" class="">
-
-    <ul class="flex flex-row flex-wrap md:mt-3 justify-center">
-        <li class="mx-8 mt-3"><a href="#">categorie 1</a></li>
-        <li class="mx-8 mt-3"><a href="#">categorie 2</a></li>
-        <li class="mx-8 mt-3"><a href="#">categorie 3</a></li>
-        <li class="mx-8 mt-3"><a href="#">categorie 4</a></li>
-        <li class="mx-8 mt-3"><a href="#">categorie 5</a></li>
-        <li class="mx-8 mt-3"><a href="#">categorie 6</a></li>
+<div id="categories" class="bg-gray-100 border-b-2 border-black">
+    <ul class=" flex :flex-row flex-wrap md:flex-nowrap md:py-3 justify-center">
+        <li class="mx-8 my-3"><a href="#">categorie</a></li>
+        <li class="mx-8 my-3"><a href="#">categorie</a></li>
+        <li class="mx-8 my-3"><a href="#">categorie</a></li>
+        <li class="mx-8 my-3"><a href="#">categorie</a></li>
+        <li class="mx-8 my-3"><a href="#">categorie</a></li>
+        <li class="mx-8 my-3"><a href="#">categorie</a></li>
     </ul>
 </div>
+
+<main class="bg-blue-200 flex flex-col justify-between content-center">
+    <div id="best products ">
+    <h1 class="border-b-2 mx-auto">best products</h1>
+    <div>content</div>
+    </div>
+    <br>
+    <div id="recent products">
+        <h1 class="border-b-2 mx-auto">best products</h1>
+        <div>content</div>
+    </div>
+</main>
 </body>
 </html>
