@@ -61,25 +61,72 @@
 </div>
 <div id="categories" class="bg-gray-100 border-b-2 border-black">
     <ul class=" flex :flex-row flex-wrap md:flex-nowrap md:py-3 justify-center">
-        <li class="mx-8 my-3"><a href="#">categorie</a></li>
-        <li class="mx-8 my-3"><a href="#">categorie</a></li>
-        <li class="mx-8 my-3"><a href="#">categorie</a></li>
-        <li class="mx-8 my-3"><a href="#">categorie</a></li>
-        <li class="mx-8 my-3"><a href="#">categorie</a></li>
-        <li class="mx-8 my-3"><a href="#">categorie</a></li>
+        <li class="mx-5 my-3"><a class="p-4 hover:bg-pink-300 rounded-lg transition ease-in-out duration-700" href="#">categorie</a>
+        </li>
+        <li class="mx-5 my-3"><a class="p-4 hover:bg-pink-300 rounded-lg transition ease-in-out duration-700" href="#">categorie</a>
+        </li>
+        <li class="mx-5 my-3"><a class="p-4 hover:bg-pink-300 rounded-lg transition ease-in-out duration-700" href="#">categorie</a>
+        </li>
+        <li class="mx-5 my-3"><a class="p-4 hover:bg-pink-300 rounded-lg transition ease-in-out duration-700" href="#">categorie</a>
+        </li>
+        <li class="mx-5 my-3"><a class="p-4 hover:bg-pink-300 rounded-lg transition ease-in-out duration-700" href="#">categorie</a>
+        </li>
+        <li class="mx-5 my-3"><a class="p-4 hover:bg-pink-300 rounded-lg transition ease-in-out duration-700" href="#">categorie</a>
+        </li>
     </ul>
 </div>
 
 <main class="bg-blue-200 flex flex-col justify-between content-center">
-    <div id="best products ">
-    <h1 class="border-b-2 mx-auto">best products</h1>
-    <div>content</div>
+    <div id="best-products " class="flex flex-col content-center mt-6">
+        <h1 class="border-b-2 mx-auto">new products</h1>
+        <div class="flex flex-col flex-wrap justify-center md:flex-row">
+            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
+            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
+            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
+        </div>
     </div>
-    <br>
-    <div id="recent products">
+    <div id="recent-products" class="flex flex-col content-center mt-6">
         <h1 class="border-b-2 mx-auto">best products</h1>
-        <div>content</div>
+        <div class="flex flex-col flex-wrap justify-center md:flex-row">
+            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
+            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
+            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
+            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
+        </div>
     </div>
+
+    <div id="contact" class="bg-gray-100 flex flex-col justify-center my-10 py-10">
+        <h1 class="border-b-2 mx-auto my-8">stay in touch</h1>
+        <form class="flex flex-wrap justify-center py-auto flex-shrink-1 ">
+            <input class=" my-4 rounded-lg border-t mx-2 border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="your@mail.com"/>
+            <button class="my-4 px-8 rounded-lg bg-pink-400  text-gray-800 font-bold p-4 uppercase border-pink-500 border-t border-b border-r">Subscribe</button>
+        </form>
+    </div>
+
+    <footer class="lg:px-38 px-16 text-black flex flex-row flex-wrap justify-around lg:py-8 py-5 bg-pink-300 border-t-2 border-black ">
+        <div class="flex justify-between items-center">
+            <a href="#">
+                Mandala
+            </a>
+        </div>
+
+        <div class=" flex" id="menu">
+            <nav class="items-center ">
+                <ul class="block text-black flex items-center justify-around text-base text-gray-700 pt-4 lg:pt-0">
+                    <li>
+                            <a class="py-3 px-4 block border-b-2 border-transparent hover:border-indigo-400"
+                           href="#"><img class="object-scale-down h-5 md:h-10" src="https://cdn.icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png">
+                            </a>
+                    </li>
+                    <li>
+                        <a class="py-3 px-4 block border-b-2 border-transparent hover:border-indigo-400"
+                           href="#"><img class="object-scale-down h-5 md:h-10" src="https://www.pngkit.com/png/full/0-7617_instagram-color-icon-instagram-social-media-png-instagram.png">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </main>
 </body>
 </html>
