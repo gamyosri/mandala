@@ -80,9 +80,9 @@
     <div id="best-products " class="flex flex-col content-center mt-6">
         <h1 class="border-b-2 mx-auto">new products</h1>
         <div class="flex flex-col flex-wrap justify-center md:flex-row">
-            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
-            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
-            <img class="mx-4 my-4" src="https://via.placeholder.com/300x220">
+            <img class="mx-4 my-4" src="https://via.placeholder.com/350x220">
+            <img class="mx-4 my-4" src="https://via.placeholder.com/350x220">
+            <img class="mx-4 my-4" src="https://via.placeholder.com/350x220">
         </div>
     </div>
     <div id="recent-products" class="flex flex-col content-center mt-6">
