@@ -166,7 +166,7 @@
         </form>
     </div>
 
-@yield('footer')
+    @yield('footer')
 </main>
 </body>
 </html>
