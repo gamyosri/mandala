@@ -36,6 +36,7 @@
         </header>
 
         @endsection
+
         @section('subheader')
             <div class="flex flex-col items-center py-5 bg-pink-200">
                 <h1 class="pt-2">LET'S DO IT TOGETHER</h1>

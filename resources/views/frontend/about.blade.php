@@ -1,29 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Mandala</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/app.js') }}"></script>
-    <style>
-        #menu-toggle:checked + #menu {
-            display: block;
-        }
-    </style>
-    @include('frontend.headers')
-</head>
-<body>
-<div>
-    @yield('header')
-</div>
-<div class="h-screen ">
+@extends('frontend.layout')
+@section('content')
     <div class="flex flex-col">
         <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
             <div class="w-full lg:w-2/5">
                 <img
                     src="https://scontent.ftxl3-1.fna.fbcdn.net/v/t1.0-9/120009728_3107711666022547_1352087376905028576_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=V_AyYVR46SUAX-wcsmt&_nc_ht=scontent.ftxl3-1.fna&oh=51b107c8f890a32afd635fbca8d22c67&oe=608714D9"
-                    class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+                    class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" alt="img">
             </div>
             <div id="profile"
                  class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
@@ -57,7 +39,8 @@
                     </div>
 
                     <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-                        <a class="link" href="https://www.facebook.com/amene.lajnef" data-tippy-content="@facebook_handle">
+                        <a class="link" href="https://www.facebook.com/amene.lajnef"
+                           data-tippy-content="@facebook_handle">
                             <svg class="h-6 fill-current text-gray-600 hover:text-pink-700" role="img"
                                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
                                 <path
@@ -65,7 +48,8 @@
                             </svg>
                         </a>
 
-                        <a class="link" href="https://www.instagram.com/amene_lajnef/" data-tippy-content="@instagram_handle">
+                        <a class="link" href="https://www.instagram.com/amene_lajnef/"
+                           data-tippy-content="@instagram_handle">
                             <svg class="h-6 fill-current text-gray-600 hover:text-pink-700" role="img"
                                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
                                 <path
@@ -73,7 +57,8 @@
                             </svg>
                         </a>
 
-                        <a class="link" href="https://www.youtube.com/channel/UCbXL9MpqTRIIA8owU7PwzHw" data-tippy-content="@youtube_handle">
+                        <a class="link" href="https://www.youtube.com/channel/UCbXL9MpqTRIIA8owU7PwzHw"
+                           data-tippy-content="@youtube_handle">
                             <svg class="h-6 fill-current text-gray-600 hover:text-pink-700" role="img"
                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>YouTube</title>
                                 <path
@@ -86,10 +71,4 @@
             </div>
         </div>
     </div>
-</div>
-
-<div>
-    @yield('footer')
-</div>
-
-</body>
+@endsection

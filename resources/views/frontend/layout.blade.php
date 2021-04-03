@@ -11,15 +11,19 @@
             display: block;
         }
     </style>
-
-    @include('backend.articles')
+    @include('frontend.headers')
 </head>
-<body class="flex flex-row ">
+<body>
 <div>
-@include('backend.sideNav')
+    @yield('header')
+    @yield('subheader')
 </div>
-<div class="bg-gray-300 w-screen flex flex-col mx-auto">
-    @yield('articleSmall')
+
+    @yield('content')
+
+
+<div>
+    @yield('footer')
 </div>
+
 </body>
-</html>
