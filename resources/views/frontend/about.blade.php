@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 @section('content')
     <div class="flex flex-col">
-        <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+        <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-20 lg:my-0">
             <div class="w-full lg:w-2/5">
                 <img
                     src="https://scontent.ftxl3-1.fna.fbcdn.net/v/t1.0-9/120009728_3107711666022547_1352087376905028576_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=V_AyYVR46SUAX-wcsmt&_nc_ht=scontent.ftxl3-1.fna&oh=51b107c8f890a32afd635fbca8d22c67&oe=608714D9"
@@ -11,7 +11,7 @@
                  class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
                 <div class="p-4 md:p-12 text-center lg:text-left">
                     <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-                         style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div>
+                         style="background-image: url('https://scontent.ftxl3-1.fna.fbcdn.net/v/t1.0-9/120009728_3107711666022547_1352087376905028576_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=V_AyYVR46SUAX-wcsmt&_nc_ht=scontent.ftxl3-1.fna&oh=51b107c8f890a32afd635fbca8d22c67&oe=608714D9')"></div>
                     <h1 class="text-3xl font-bold pt-8 lg:pt-0">Amene Lajnef</h1>
                     <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-pink-500 opacity-25"></div>
                     <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
@@ -33,9 +33,9 @@
                     <p class="pt-8 text-sm">Introduce your self here</p>
 
                     <div class="pt-12 pb-8">
-                        <button class="bg-pink-700 hover:bg-pink-900 text-white font-bold py-2 px-4 rounded-full">
+                        <a href="{{url('/contact')}}" class="bg-pink-700 hover:bg-pink-900 text-white font-bold py-2 px-4 rounded-full">
                             Contacter
-                        </button>
+                        </a>
                     </div>
 
                     <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">

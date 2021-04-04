@@ -1,4 +1,4 @@
-
+@extends('frontend.layout')
 @section('content')
     <div class="rounded overflow-hidden shadow-lg m-4 bg-gray-100 md:w-1/4">
         <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">

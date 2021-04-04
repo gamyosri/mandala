@@ -34,5 +34,5 @@ Route::group(['prefix' => 'myspace'], function () {
 
 
 Route::get('/test', function () {
-    return view('frontend.articleCards');
+    return view('frontend.article');
 });

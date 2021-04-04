@@ -18,10 +18,7 @@
     @yield('header')
     @yield('subheader')
 </div>
-
     @yield('content')
-
-
 <div>
     @yield('footer')
 </div>
