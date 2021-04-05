@@ -30,9 +30,13 @@ Route::group(['prefix' => 'myspace'], function () {
     Route::get('/categories', function () {
         return view('backend.categories');
     });
+
+    Route::get('/messages', function () {
+        return view('backend.messages');
+    });
 });
 
 
 Route::get('/test', function () {
-    return view('frontend.article');
+    return view('backend.article-modal');
 });

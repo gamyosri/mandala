@@ -27,13 +27,16 @@
             </div>
 
             <nav class="flex-grow block px-4 pb-4 pb-0 overflow-y-auto">
-                <a class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                    href="{{url('/myspace')}}">Dashboard</a>
-                <a class=" @if(request()->is('myspace/articles')) bg-gray-200 @endif block px-4 py-2 mt-2 text-sm font-semibold text-gray-900  rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class=" @if(request()->is('myspace/articles')) bg-gray-200 @endif block px-4 py-2 mt-2 text-sm font-semibold text-gray-900  rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                    href="{{url('/myspace/articles')}}">Articles</a>
-                <a class=" @if(request()->is('myspace/categories')) bg-gray-200 @endif block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class=" @if(request()->is('myspace/categories')) bg-gray-200 @endif block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg  hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                    href="{{url('/myspace/categories')}}">Categories</a>
-
+                <a class=" @if(request()->is('myspace/messages')) bg-gray-200 @endif block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg  hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                   href="{{url('/myspace/messages')}}">Messages</a>
+                <a class="  bg-red-200  block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg focus:text-gray-900 hover:bg-red-300 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                   href="{{url('/myspace/categories')}}">Logout</a>
             </nav>
         </div>
     </div>
@@ -58,7 +61,7 @@
         <div class="w-10 h-10 rounded-full self-end dropdown">
             <img alt="profile" src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png" >
                 <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 pr-3 rounded-md">
-                    <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">one</a></li>
+                    <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Messages</a></li>
                     <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Logout</a></li>
                 </ul>
         </div>

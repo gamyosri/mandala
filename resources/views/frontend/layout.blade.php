@@ -14,11 +14,16 @@
     @include('frontend.headers')
 </head>
 <body>
+
 <div>
     @yield('header')
     @yield('subheader')
 </div>
-    @yield('content')
+
+<div>
+@yield('content')
+</div>
+
 <div>
     @yield('footer')
 </div>

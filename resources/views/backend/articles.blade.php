@@ -1,9 +1,8 @@
 @extends('backend.layout')
-
 @section('content')
     <div class="flex flex-col w-3/4 m-auto">
         <div class="flex flex-row justify-end m-5">
-            <button class="bg-pink-300 px-4 py-2 rounded-md mr-20 shadow-xl" type="button">Ajouter</button>
+            <button class="bg-pink-300 px-4 py-2 rounded-md mr-20 shadow-xl" type="button" id="show-modal">Ajouter</button>
         </div>
         <div class="m-5 shadow-xl">
             <table class=" p-3 w-full ">
@@ -118,7 +117,10 @@
             </table>
         </div>
     </div>
+
+@include('backend.article-modal')
 @endsection
+
 
 @section('articleSmall')
         <div class="flex shadow-lg mx-auto my-10 h-64 w-3/4">
@@ -146,8 +148,7 @@
             </div>
 @endsection
 
-@section('article')
-
+@section('articlee')
                 <div class="flex shadow-lg mx-auto my-10 h-64 w-3/4">
                     <img class="h-full w-1/3 object-cover rounded-l-lg"
                          src="https://ik.imagekit.io/q5edmtudmz/FB_IMG_15658659197157667_wOd8n5yFyXI.jpg" alt="bag">
