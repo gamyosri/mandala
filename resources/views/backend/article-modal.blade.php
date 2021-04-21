@@ -72,7 +72,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="px-2 py-6 border-t-2 border-gray-300 flex justify-end space-x-2" id="modal-footer">
+                <div class="px-2 py-6 border-t-2 border-gray-300 flex justify-end space-x-2 rounded" id="modal-footer">
                     <button class="border-2  p-3 rounded-lg hover:bg-blue-500" id="cancel">Cancel</button>
                     <button class="w-1/5 bg-green-200 p-2 rounded-lg hover:bg-green-500">Save</button>
                 </div>

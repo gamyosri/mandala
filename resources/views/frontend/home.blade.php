@@ -145,8 +145,9 @@
 
         <div id="contact" class="bg-gray-100 flex flex-col justify-center my-10 py-10">
             <h1 class="border-b-2 mx-auto my-8">stay in touch</h1>
-            <form class="flex flex-wrap justify-center py-auto flex-shrink-1 ">
-                <input class=" my-4 rounded-lg border-t mx-2 border-b border-l text-gray-800 border-gray-200 bg-white"
+            <form class="flex flex-wrap justify-center py-auto flex-shrink-1 " method="POST" action="{{url('/subscription')}}">
+                @csrf
+                <input type="email" name="email" class=" my-4 rounded-lg border-t mx-2 border-b border-l text-gray-800 border-gray-200 bg-white"
                        placeholder="  Enter your email adress"/>
                 <button
                     class="my-4 px-8 rounded-lg bg-pink-400  text-gray-800 font-bold p-4 uppercase border-pink-500 border-t border-b border-r">
